@@ -1,4 +1,5 @@
-from django import path
+from django.urls import path
 from . import views
 urlpatterns = [
-    path(""), views.my_view, name="details"]
+    path("", views.my_view, name="details"),
+]
